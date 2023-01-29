@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div>
+            <input class="form-input" id="userName" type="text" placeholder="John doe">
+            <span class="text-red" id="userNameError"></span>
+        </div>
+
+        <div>
+            <input class="form-input" id="userEmail" type="email" placeholder="johndoe@example.com">
+            <span class="text-red" id="userEmailError"></span>
+        </div>
+
+        <div>
+            <input class="form-input" type="password" id="userPassword" placeholder="qwerty@123">
+            <span class="text-red" id="userPasswordError"></span>
+        </div>
+
+        <div>
+            <input class="form-input" type="password" id="userConfirmPassword" placeholder="qwerty@123">
+            <span class="text-red" id="userConfirmPasswordError"></span>
+        </div>
+
+        <div>
+            <textarea class="form-input" id="userComment" cols="30" rows="4" placeholder="comments... [optional]"></textarea>
+            <span class="text-red" id="userCommentError"></span>
+        </div>
+
+        <div>
+            <select name="countryCode" id="userCountryCode">
+                <option value="+91">India (+91)</option>
+                <option value="+1">United States (+1)</option>
+                <option value="+44">United Kingdom (+44)</option>
+                <option value="+33">France (+33)</option>
+                <option value="+81">Japan (+81)</option>
+            </select>
+            <input id="userPhoneNumber" type="number" placeholder="1234567890">
+            <span class="text-red" id="userPhoneNumberError"></span>
+        </div>
+
+        <button id="submitBtn">Submit</button>
+    </form>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
